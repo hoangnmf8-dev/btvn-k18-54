@@ -1,3 +1,4 @@
+-- Create
 create table province (
     id serial primary key,
     name text not null,
@@ -11,6 +12,7 @@ create table ward (
     name_eng text not null
 );
 
+-- Insert
 insert into
     province (name, name_eng)
 values ('Thái Bình', 'Thai Binh'),
@@ -23,6 +25,7 @@ values (1, 'Cộng Hòa', 'Cong Hoa'),
     (2, 'Thanh Khê', 'Thanh Khe'),
     (3, 'Ba Đình', 'Ba Dinh');
 
+-- Update
 update province
 set
     name = 'Hưng Yên',
@@ -37,6 +40,7 @@ set
 where
     id = 1;
 
+-- Delete
 delete from province where id = 2;
 
 delete from ward where id = 2;
